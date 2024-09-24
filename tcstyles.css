@@ -1,0 +1,103 @@
+:root {
+    --background1: #0a0f27;
+    --background2: #0f1227;
+    --white: #ffffff;
+}
+
+body {
+    justify-content: center;
+    background-color: var(--background1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.telephone-box {
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.input-container{
+    width: 300px;
+    height: 500px;
+    border: 5px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--background2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.output-container {
+    width: 235px;
+    flex-basis: 200px;
+    background-color: var(--background2);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.input-container label {
+    color: var(--white);
+    font-size: 19px;
+    font-style: oblique;
+}
+
+.input-container input {
+    width: 220px;
+    height: 27px;
+    border-bottom: 5px yellow;
+    font-size:25px;
+}
+
+.check {
+    cursor: pointer;
+    padding:7px;
+    width:65px;
+    font-weight: bold;
+    background-color: green;
+    border: 1px green solid;
+    border-radius:15px;
+    color: var(--white);
+}
+
+.clear {
+    cursor: pointer;
+    padding:7px;
+    width:65px;
+    font-weight: bold;
+    background-color: #de0b06;
+    border: 1px red solid;
+    border-radius:15px;
+    color: var(--white);
+}
+
+.check:hover {
+    background-image: linear-gradient(#09aa10, green);
+}
+.clear:hover {
+    background-image: linear-gradient(#ff0019, red)
+}
+
+#user-input {
+    border: 1px var(--background2) solid;
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+    text-align: center;
+    background-color: var(--background2);
+}
+
+.result-text {
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;   
+}
+
+.b1{
+    align-self: flex-end;
+}
